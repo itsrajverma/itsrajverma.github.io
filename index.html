@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Raj Kumar | Team Lead &amp; Full Stack Developer</title>
+<meta name="description" content="Raj Kumar, Team Lead and Full Stack Developer in Hyderabad. Python, Django, React, Angular, AWS and AI. Fly a paper plane through 9+ years of work.">
+<link rel="canonical" href="https://itsrajverma.github.io/">
+<meta property="og:title" content="Raj Kumar | Team Lead &amp; Full Stack Developer">
+<meta property="og:description" content="Fly a paper plane through 9+ years of work.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://itsrajverma.github.io/">
+<meta property="og:image" content="https://itsrajverma.github.io/og.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b8a93">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23d8343f' d='M2 15 30 3 20 29l-5-9z'/%3E%3Cpath fill='%232057a8' d='M15 20 30 3 12 17v10z'/%3E%3C/svg%3E">
+</head>
+<body>
+<canvas id="scene" aria-label="Paper plane flying between islands"></canvas>
+<div id="labels" aria-hidden="true"></div>
+
+<section id="envelope" hidden></section>
+<section id="intro" hidden>
+  <h1 id="name"></h1>
+  <p id="role"></p>
+  <p id="introText"></p>
+  <div class="row"><button class="btn primary" id="start">Take off</button><button class="btn" data-read>Read as a page</button></div>
+  <p class="keys" id="keys"></p>
+</section>
+
+<header id="hud" hidden>
+  <div id="score" aria-live="polite"></div>
+  <div class="row"><button class="btn small" id="tour">Guided tour</button><button class="btn small" id="sound" aria-pressed="true">Sound on</button><button class="btn small" data-read>Read as a page</button></div>
+</header>
+<button class="btn primary" id="prompt" hidden></button>
+<button id="compass" hidden><svg viewBox="0 0 24 24" width="22" aria-hidden="true"><path d="M12 2 20 21l-8-5-8 5z" fill="#d8343f"/></svg><span></span></button>
+<div id="toast" role="status"></div>
+<nav id="album" aria-label="Fly to an island" hidden></nav>
+<div id="touch" hidden><button class="btn" data-key="climb">Climb</button><button class="btn" id="roll">Roll</button><button class="btn" data-key="boost">Boost</button></div>
+
+<aside id="panel" role="dialog" aria-labelledby="panelTitle" hidden><div id="panelBody"></div></aside>
+<section id="finale" role="dialog" aria-labelledby="finTitle" hidden></section>
+<main id="page" hidden tabindex="-1"><div id="pageBody"></div></main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
