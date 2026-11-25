@@ -1,4 +1,7 @@
 # Raj's Paper Archipelago
+
+Live: https://itsrajverma.github.io
+
 Game-style portfolio: fly a paper plane between islands, collect a stamp per project and a star per skill.
 
     npm install
